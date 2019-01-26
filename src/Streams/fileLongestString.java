@@ -13,7 +13,6 @@ public class fileLongestString {
 		Optional<String> data1 = names.stream().reduce((v1,v2) -> v1+" = "+v2 );
 		data.ifPresent(System.out::println);
 		System.out.println(data1);
-		
 		names.stream().distinct().forEach(System.out::println); // disctinct
 		long count = names.stream().distinct().count(); //  distinct with count
 		System.out.println("Count : "+count);
